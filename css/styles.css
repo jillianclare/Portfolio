@@ -1,0 +1,561 @@
+body {
+    background-color: #e8e8e8;
+
+}
+
+
+/* --- Cursor --- */
+
+
+
+/* --- Navbar --- */
+
+.container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 75px;
+}
+
+.logo {
+    width: 190px;
+    height: 130px;
+    margin-right: 140px;
+    padding-right: 120px;
+    padding-left: 40px;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+}
+
+.header-buttons {
+    background-color: #e8e8e8;
+    display: flex;
+    list-style: none;
+    margin-left: 900px;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-buttons button {
+  font-size: 28px;
+  font-style: normal;
+  font-family: 'Franklin Gothic Regular', 'Arial Narrow', Arial, sans-serif;
+  white-space: nowrap;
+  background-color: rgb(151, 95, 255);
+  color: white;
+  box-shadow: 0px 10px 10px rgb(210, 187, 253) inset,
+  0px 5px 10px rgba(5, 5, 5, 0.212),
+  0px -10px 10px rgb(124, 54, 255) inset;
+  position: relative;
+  width: 150px;
+  height: 55px;
+  border-radius: 45px;
+  border: none;
+}
+
+.header-buttons button::before {
+    width: 70%;
+    height: 2px;
+    position: absolute;
+    background-color: rgba(250, 250, 250, 0.678);
+    content: "";
+    filter: blur(1px);
+    top: 7px;
+    border-radius: 50%;
+}
+
+.header-buttons button::after {
+  width: 70%;
+  height: 2px;
+  position: absolute;
+  background-color: rgba(250, 250, 250, 0.137);
+  content: "";
+  filter: blur(1px);
+  bottom: 7px;
+  border-radius: 50%;
+}
+
+.header-buttons button:hover {
+    animation: jello-horizontal 0.9s both;
+}
+
+@keyframes jello-horizontal {
+    0% {
+      transform: scale3d(1, 1, 1);
+    }
+  
+    30% {
+      transform: scale3d(1.25, 0.75, 1);
+    }
+  
+    40% {
+      transform: scale3d(0.75, 1.25, 1);
+    }
+  
+    50% {
+      transform: scale3d(1.15, 0.85, 1);
+    }
+  
+    65% {
+      transform: scale3d(0.95, 1.05, 1);
+    }
+  
+    75% {
+      transform: scale3d(1.05, 0.95, 1);
+    }
+  
+    100% {
+      transform: scale3d(1, 1, 1);
+    }
+  }
+
+.header-buttons li {
+    margin-right: 150px;
+}
+
+.header-buttons li:last-child {
+    margin-right: 0;
+}
+
+.inline-block {
+    padding: 40px;
+    margin: 20px 0;   
+}
+
+
+/* --- About Me Section --- */
+
+.about-me {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.profile-photo-container {
+    margin-right: 30px;
+    margin-left: 40px;
+}
+
+.profile-photo {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    border: 3px solid rgb(36, 33, 33);
+}
+
+.text-container {
+   display: flex;
+   flex-direction: column;   
+}
+
+.text-container h2 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 40px;
+}
+
+.text-container p {
+    font-family: 'Franklin Gothic Regular', 'Arial Narrow', Arial, sans-serif;
+    font-size: 24px;
+    margin-right: 40px;
+    width: 400px;
+    margin-top: 20px;
+}
+
+
+
+/* --- Skills Section --- */
+
+.skills {
+    display: flex;
+    margin-bottom: 100px;
+}
+
+.skillsContainer h2 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 40px;
+    margin-left: 380px;
+}
+
+.skillsContainer p {
+    font-family: 'Franklin Gothic Regular', 'Arial Narrow', Arial, sans-serif;
+    width: 400px;
+    margin-left: 380px;
+    font-size: 24px;
+}
+
+/* --- Case Studies --- */
+
+.myWork {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 40px;
+  color: black;
+  margin-left: 1200px;
+  white-space: nowrap;
+}
+
+.csWrapper {
+  display: flex;
+  height: 100vh;
+justify-content: center;
+}
+
+.casestudyContainer .getgoldenContainer .fccContainer {
+box-sizing: border-box;
+align-self: flex-start;
+}
+
+.cardContainer {
+  display: flex;
+  flex-direction: row;
+  margin-top: 100px;
+  gap: 10px;
+  box-sizing: border-box;
+  width: 300px;
+}
+
+
+.cardMonarch {
+  display: flex;
+}
+
+
+
+ /* -- Case Study 1 -- */
+
+.casestudyContainer {
+  color: white;
+  font-family: sans-serif;
+  width: 50%;
+}
+
+.casestudyContainer::before,
+.casestudyContainer::after {
+  content: "";
+  background-color: #be52c28e;
+  position: absolute;
+}
+
+.casestudyContainer::before {
+    border-radius: 50%;
+    width: 6rem;
+    height: 6rem;
+    content: "";
+    margin-left: 550px;
+    margin-top: 195px;
+  }
+
+  .casestudyContainer::after {
+    content: "";
+    position: absolute;
+    height: 3rem;
+    top: 8%;
+    right: 5%;
+    border: 1px solid;
+  }
+
+  .casestudyContainer .caseStudy1 {
+    width: 11.875em;
+    height: 15.875em;
+    padding: 1rem;
+    background-color: rgba(255, 255, 255, 0.074);
+    border: 1px solid rgba(255, 255, 255, 0.222);
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
+    border-radius: 0.7rem;
+    transition: all ease 0.3s;
+    margin-left: 500px;
+  }
+
+  .casestudyContainer .caseStudy1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .casestudyContainer .caseStudy1 .title {
+    font-size: 2rem;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    hyphens: auto;
+    word-wrap: break-word;
+  }
+
+  .casestudyContainer .caseStudy1 div strong {
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+
+  .casestudyContainer .caseStudy1 div button {
+    margin: 0;
+    font-size: 0.9em;
+    font-weight: 300;
+    letter-spacing: 0.1em;
+    color: rgba(0, 0, 0, 0.651);
+    border-color: rgba(0, 0, 0, 0.301) ;
+  }
+  
+  .casestudyContainer .caseStudy1:hover {
+    box-shadow: 0px 0px 20px 1px #fc4afc3f;
+  border: 1px solid rgba(255, 255, 255, 0.454);
+  }
+
+    /* -- Case Study 2 -- */
+    
+  .getgoldenContainer {
+      color: white;
+      font-family: sans-serif;
+      width: 50%;
+  } 
+
+  .getgoldenContainer::before,
+  .getgoldenContainer::after {
+    content: "";
+    background-color: #eeeb5b;
+    position: absolute;
+  }
+
+  .getgoldenContainer::before {
+    border-radius: 50%;
+    width: 6rem;
+    height: 6rem;
+    content: "";
+    margin-left: 1060px;
+    margin-top: 100px;
+  }
+
+  .getgoldenContainer::after {
+    content: "";
+    position: absolute;
+    height: 3rem;
+    top: 8%;
+    right: 5%;
+    border: 1px solid;
+  }
+
+
+  .getgoldenContainer .caseStudy2 {
+    width: 11.875em;
+    height: 15.875em;
+    padding: 1rem;
+    background-color: rgba(255, 255, 255, 0.074);
+    border: 1px solid rgba(255, 255, 255, 0.222);
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
+    border-radius: 0.7rem;
+    transition: all ease 0.3s;
+    margin-left: 1000px;
+  }
+
+  .getgoldenContainer .caseStudy2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 900px;
+  }
+
+  .getgoldenContainer .caseStudy2 .title {
+    font-size: 2rem;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    hyphens: auto;
+    word-wrap: break-word;
+  }
+
+  .getgoldenContainer .caseStudy2 div strong {
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+
+  .getgoldenContainer .caseStudy2 div button {
+    margin: 0;
+    font-size: 0.9em;
+    font-weight: 300;
+    letter-spacing: 0.1em;
+    color: rgba(0, 0, 0, 0.651);
+    border-color: rgba(0, 0, 0, 0.301) ;
+  }
+
+  .getgoldenContainer .caseStudy2:hover {
+    box-shadow: 0px 0px 20px 1px #e3fa183f;
+  border: 1px solid rgba(255, 255, 255, 0.454);
+  }
+
+
+ /* -- Case Study 3 -- */
+ .fccContainer {
+  color: white;
+  font-family: sans-serif;
+  width: 50%;
+} 
+
+.fccContainer::before,
+.fccContainer::after {
+content: "";
+background-color: #0c49f1;
+position: absolute;
+}
+
+.fccContainer::before {
+border-radius: 50%;
+width: 6rem;
+height: 6rem;
+content: "";
+margin-left: 1060px;
+margin-top: 100px;
+}
+
+.fccContainer::after {
+content: "";
+position: absolute;
+height: 3rem;
+top: 8%;
+right: 5%;
+border: 1px solid;
+}
+
+
+.fccContainer .caseStudy3 {
+width: 11.875em;
+height: 15.875em;
+padding: 1rem;
+background-color: rgba(255, 255, 255, 0.074);
+border: 1px solid rgba(255, 255, 255, 0.222);
+-webkit-backdrop-filter: blur(20px);
+backdrop-filter: blur(20px);
+border-radius: 0.7rem;
+transition: all ease 0.3s;
+margin-left: 1000px;
+}
+
+.fccContainer .caseStudy3 {
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+margin-bottom: 900px;
+}
+
+.fccContainer .caseStudy3 .title {
+font-size: 2rem;
+font-weight: 500;
+letter-spacing: 0.1em;
+hyphens: auto;
+}
+
+.fccContainer .caseStudy3 div strong {
+display: block;
+margin-bottom: 0.5rem;
+}
+
+.fccContainer .caseStudy3 div button {
+margin: 0;
+font-size: 0.9em;
+font-weight: 300;
+letter-spacing: 0.1em;
+color: rgba(0, 0, 0, 0.651);
+border-color: rgba(0, 0, 0, 0.301) ;
+}
+
+.fccContainer .caseStudy3:hover {
+box-shadow: 0px 0px 20px 1px #5d71e08e;
+border: 1px solid rgba(255, 255, 255, 0.454);
+}
+
+
+
+/* --- Footer Section --- */
+
+.footerContainer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+}
+
+.footerContainer h2 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 40px;
+   
+}
+
+.footer-buttons {
+    color: black;
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+    white-space: wrap;
+}
+
+.footer-buttons button {
+    font-size: 28px;
+    font-style: normal;
+    font-family: 'Franklin Gothic Regular', 'Arial Narrow', Arial, sans-serif;
+    white-space: nowrap;
+    background-color: rgb(151, 95, 255);
+    color: white;
+    box-shadow: 0px 10px 10px rgb(210, 187, 253) inset,
+    0px 5px 10px rgba(5, 5, 5, 0.212),
+    0px -10px 10px rgb(124, 54, 255) inset;
+    position: relative;
+    width: 150px;
+    height: 55px;
+    border-radius: 45px;
+    border: none;
+}
+
+.footer-buttons button::before {
+    width: 70%;
+    height: 2px;
+    position: absolute;
+    background-color:#e8e8e8;
+    content: "";
+    filter: blur(1px);
+    top: 7px;
+    border-radius: 50%;
+}
+
+.footer-buttons button::after {
+  width: 70%;
+  height: 2px;
+  position: absolute;
+  background-color: rgba(250, 250, 250, 0.137);
+  content: "";
+  filter: blur(1px);
+  bottom: 7px;
+  border-radius: 50%;
+}
+
+.footer-buttons button:hover {
+    animation: jello-horizontal 0.9s both;
+}
+
+@keyframes jello-horizontal {
+    0% {
+      transform: scale3d(1, 1, 1);
+    }
+  
+    30% {
+      transform: scale3d(1.25, 0.75, 1);
+    }
+  
+    40% {
+      transform: scale3d(0.75, 1.25, 1);
+    }
+  
+    50% {
+      transform: scale3d(1.15, 0.85, 1);
+    }
+  
+    65% {
+      transform: scale3d(0.95, 1.05, 1);
+    }
+  
+    75% {
+      transform: scale3d(1.05, 0.95, 1);
+    }
+  
+    100% {
+      transform: scale3d(1, 1, 1);
+    }
+  }
